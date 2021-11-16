@@ -261,7 +261,7 @@ select{
     color: #4F392B;
     margin: 0;
     background-color: rgb(218, 201, 166, 20%);
-    border-radius: 0;
+    border-radius: none;
 }
 .buy{
     text-align: center;
