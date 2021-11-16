@@ -1,0 +1,1021 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    color: #4F392B;
+}
+div.header{
+    /* border: 1px solid green; */
+    background-color: #E8E1DB;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+div.icon{
+    /* border: 1px solid black; */
+    display: flex;
+    margin: 10px;
+    margin-right: 70px;
+}
+div img{
+    margin: 0 10px;
+    padding: 1px;
+}
+
+/* ====================================nav==================================== */
+header{
+    font-size: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NavBar */
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #E8E1DB;
+    /* box-shadow: 0px 1px 3px #00000088; */
+    
+    
+}
+
+/* 隱藏 checkbox */
+input {
+    display: none;
+}
+
+/* 漢堡按鈕 */
+label {
+    float: right;
+    padding-right: 30px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+label::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+label img {
+    width: 30px;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+
+
+/* menu*/
+.menu {
+    clear: both;
+    background: #E8E1DB;
+}
+
+.menu li {
+    text-align: center;
+}
+
+.menu li a {
+    display: block;
+    line-height: 50px;
+    font-size: 16px;
+    color: #4F392B;
+}
+
+.menu li a:hover {
+    background: #DBD0BD;
+    transition-duration: 0.2s;
+}
+
+
+/* 下拉選單效果 */
+.menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: .2s;
+    /* 動畫秒數 */
+}
+
+input:checked~.menu {
+    max-height: 300px;
+}
+
+nav img.logo{
+    /* height: 60px; */
+    padding: 5px 10px;
+}
+
+/* mediaquery */
+@media screen and (min-width: 768px) {
+    label {
+        display: none;
+    }
+
+    .menu {
+        float: right;
+        clear: none;
+        max-height: 50px;
+        background: #E8E1DB;
+        margin: 0;
+    }
+
+    .menu li {
+        display: inline-block;
+    }
+
+    .menu li a {
+        padding: 0 10px;
+        margin: 5px;
+    }
+
+}
+/* ====================================banner==================================== */
+div.autoplay {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.autoplay img {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+.autoplay button{
+    display: none;
+}
+/* ====================================new arrived==================================== */
+div.new{
+    background-color: #DBD0BD;
+    max-width: 1200px;
+    /* padding: 50px; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+div.new div.new_box{
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    padding: 10px 0;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+div.new p{
+    /* border: 1px solid red; */
+    font-size: 18px;
+    padding: 15px 40px;
+    margin: 20px 0;
+    text-align: center;
+}
+div.new img{
+    /* border: 1px solid green; */
+    padding: 0;
+    margin: 50px;
+    /* display: flex; */
+    width: 60%;
+}
+div.new div div{
+    /* border: 1px solid blue; */
+    margin: 20px;
+    font-size: 12px;
+    align-self: center; /* 控制單個元素置中 */
+}
+/* 上方的view more*/
+div p.view_more{
+    font-size: 12px;
+    border: 1px solid #4F392B;
+}
+div p.view_more:hover{
+    cursor: pointer;
+    color: #DBD0BD;
+    background-color: #4F392B;
+    transition-duration: 0.2s;
+} 
+/* 下方的view more*/
+div div.view_more{
+    display: none;
+    /* border: 1px solid black */
+}
+
+div.view_more p{
+    font-size: 12px;
+    border: 1px solid #4F392B;
+    display: block;
+    font-size: 12px;
+    padding: 20px 50px;
+}
+
+div p.view_more:hover{
+    cursor: pointer;
+    color: #DBD0BD;
+    background-color: #4F392B;
+    transition-duration: 0.2s;
+} 
+div.view_more p:hover{
+    cursor: pointer;
+    color: #DBD0BD;
+    background-color: #4F392B;
+    transition-duration: 0.2s;
+}
+
+/* ====================================ranking==================================== */
+div.ranking{
+    background-color: rgb(167, 125, 84, 50%);
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 50px;
+}
+div.ranking_box{
+    /* border: 1px solid red; */
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+}
+div.top{
+    border: 1px solid #4F392B;
+    padding: 5px;
+    text-align: left;
+}
+div.ranking img{
+    /* border: 1px solid yellow; */
+    width: 300px;
+    margin: 0;
+    padding: 0;
+}
+div.ranking p.title{
+    /* border: 1px solid green; */
+    margin: 0;
+    font-size: 18px;
+    padding: 50px 0 30px 0;
+}
+div.top p{
+    margin: 0;
+    padding: 5px;
+    background-color: #E8E1DB;
+}
+div.top div{
+    /* border: 1px solid red; */
+    margin: 5px;
+    font-size: 14px;
+}
+div p.brand{
+    border: 1px solid #4F392B;
+    display: inline-block;
+    margin: 5px;
+    font-size: 16px;
+}
+div.price{
+    text-align: right;
+    padding: 5px;
+}
+div.other{
+    text-align: right;
+}
+div.other p{
+    padding: 5px 10px;
+    border: 1px solid #4F392B;
+    display: inline-block;
+}
+
+/* ====================================instagram==================================== */
+div.instagram{
+    background-color: #DBD0BD;
+    max-width: 1200px;
+    /* padding: 50px; */
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+div.instagram p{
+    margin: 0;
+    font-size: 18px;
+    padding: 50px 0 30px 0;
+    text-align: center;
+}
+div.instagram div{
+    /* border: 1px solid black; */
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+div.instagram img{
+    width: 20%;
+    margin: 10px;
+}
+
+/* ====================================concept==================================== */
+div.concept_banner{
+    /* border: 1px solid red; */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+div.concept_text{
+    background-color: rgb(167, 125, 84, 50%);
+    max-width: 500px;
+    padding: 10px;
+    margin: 30px 0 0 0;
+}
+div.slogan{
+    /* border: 1px solid red; */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 45px;
+
+    background-image: url(./photos/homepage/slogan.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+}
+div.slogan h3{
+    /* border: 1px solid blue; */
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+}
+/* ====================================brands==================================== */
+div.brands{
+    /* border: 1px solid red; */
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.brands img{
+    /* border: 1px solid blue; */
+    width: 20%;
+    margin: 20px;
+}
+
+/* ====================================footer==================================== */
+.footer{
+    /* border: 1px solid red; */
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #E8E1DB;
+}
+.footer img{
+    width: 50px;
+    /* border: 1px solid blue; */
+}
+.footer_main{
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer_main div.contact, div.follow, div.pay{
+    /* border: 1px solid black; */
+    display: inline-block;
+    margin: 30px;
+    padding: 10px 20px;
+}
+div.contact_text, div.follow_text, div.pay_text{
+    /* border: 1px solid red; */
+    padding: 10px;
+}
+div.contact_text{
+    border: 1px solid #4F392B;
+    background-color: #DBD0BD;
+    padding: 10px;
+    
+}
+div.contact_text:hover{
+    cursor: pointer;
+    background-color: #4F392B;
+    color: #DBD0BD;
+    transition-duration: 0.2s;
+}
+.footer p{
+    font-size: 10px;
+    margin: 0;
+    padding: 5px;
+}
+footer.footer{
+    background-color: #4F392B;
+    color:#E8E1DB;
+    text-align: left;
+    padding: 5px;
+}
+
+@media screen and (max-width: 319.98px){
+    /* ----------header---------- */
+    div.icon{
+        margin-right: 70px;
+    }
+    header div img{
+        margin: 0 auto;
+        padding: 7px;
+    }
+ 
+    /* ----------new arrived---------- */
+    div.new div.new_box{
+        display: block;
+        text-align: center;
+    }
+    div.new img{
+        padding: 0;
+        margin: 30px auto;
+        display: block;
+        width: 90%;
+    }
+    div.new p{
+        margin: 0;
+    }
+    /* 上方的view more*/
+    div p.view_more{
+    display: none;
+    }
+    /* 下方的view more*/
+    div div.view_more{
+        display: inline-block; /* 原本是none，復原 */
+    }
+    div.view_more p{
+        font-size: 12px;
+        padding: 20px 50px;
+    }
+    /* ----------ranking---------- */
+    div.ranking img{
+        width: 80px;
+        height: 80px;
+        margin: 0;
+        padding: 0;
+    }
+    div.top{
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        margin: 3px
+    }
+    div.ranking_box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div.top div.information{
+        padding: 0;
+        font-size: 10px;
+        width: 150px;
+        margin: 0;
+        font-size: 10px;
+    }
+    div.top div{
+        margin: 2px;
+        font-size: 10px;
+        margin: 2px;
+    }
+    div.top{
+        padding: 5px;
+        text-align: left;
+    }
+
+    div.top p{
+        padding: 3px;
+        font-size: 12px;
+        background-color: #E8E1DB;
+    }
+    div.other p{
+        padding: 5px 10px;
+        border: 1px solid #4F392B;
+        display: none;
+    }
+    div p.brand{
+        border: 1px solid #4F392B;
+        display: inline-block;
+        margin: 5px;
+        font-size: 12px;
+    }
+    div.price{
+        display: none;
+        text-align: right;
+        padding: 2px;
+        font-size: 10px;
+    }
+    /* ----------instagram---------- */
+    div.instagram img{
+        width: 25%;
+        margin: 10px;
+    }
+    div.instagram img.img{
+        display: none;
+    }
+    /* ----------concept---------- */
+    div.slogan{
+        margin: 0 auto;
+        padding: 30px;
+    }
+    div.slogan h3{
+        margin: 0px;
+        padding: 5px;
+        text-align: center;
+    }
+    /* ----------brands---------- */
+    .brands img{
+        width: 20%;
+        margin: 5px;
+    }
+    /* ----------footer---------- */
+    .footer_main{
+        display: block;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .footer_main div.contact, div.follow, div.pay{
+        display: block;
+    }
+    .footer_main div.contact{
+        margin: 10px;
+    }
+    div.contact_text{
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 20px;
+    }
+    .footer_main img{
+        width: 25px;
+        margin: 5px;
+    }
+    div.follow, div.pay{
+        margin: 10px;
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 459.98px){
+    /* ----------header---------- */
+    div.icon{
+        margin-right: 70px;
+    }
+    header div img{
+        margin: 0 auto;
+        padding: 7px;
+    }
+ 
+    /* ----------new arrived---------- */
+    div.new div.new_box{
+        display: block;
+        text-align: center;
+    }
+    div.new img{
+        padding: 0;
+        margin: 30px auto;
+        display: block;
+        width: 90%;
+    }
+    div.new p{
+        margin: 0;
+    }
+    /* 上方的view more*/
+    div p.view_more{
+    display: none;
+    }
+    /* 下方的view more*/
+    div div.view_more{
+        display: inline-block; /* 原本是none，復原 */
+    }
+    div.view_more p{
+        font-size: 12px;
+        padding: 20px 50px;
+    }
+    /* ----------ranking---------- */
+    div.ranking img{
+        width: 100px;
+        height: 100px;
+        margin: 0;
+        padding: 0;
+    }
+    div.top{
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        margin: 5px;
+    }
+    div.ranking_box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div.top div.information{
+        padding: 0;
+        font-size: 10px;
+        width: 160px;
+        margin: 0;
+    }
+    div.top div{
+        margin: 2px;
+        font-size: 12px;
+        margin: 0;
+    }
+    div.top{
+        padding: 5px;
+        text-align: left;
+    }
+
+    div.ranking p.title{
+        margin: 0;
+        font-size: 18px;
+        padding: 50px 0 30px 0;
+    }
+    div.top p{
+        margin: 0px;
+        padding: 3px;
+        font-size: 12px;
+        background-color: #E8E1DB;
+    }
+    div.top div{
+        margin: 2px;
+        font-size: 12px;
+    }
+    div.other p{
+        padding: 5px 10px;
+        border: 1px solid #4F392B;
+        display: none;
+    }
+    div p.brand{
+        border: 1px solid #4F392B;
+        display: inline-block;
+        margin: 2px;
+        font-size: 12px;
+    }
+    div.price{
+        text-align: right;
+        padding: 2px;
+        font-size: 10px;
+    }
+    /* ----------instagram---------- */
+    div.instagram img{
+        width: 25%;
+        margin: 10px;
+    }
+    div.instagram img.img{
+        display: none;
+    }
+    /* ----------concept---------- */
+    div.slogan{
+        margin: 0 auto;
+        padding: 30px;
+    }
+    div.slogan h3{
+        margin: 0px;
+        padding: 5px;
+        text-align: center;
+    }
+    /* ----------brands---------- */
+    .brands img{
+        width: 20%;
+        margin: 5px;
+    }
+    /* ----------footer---------- */
+    .footer_main{
+        display: block;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .footer_main div.contact, div.follow, div.pay{
+        display: block;
+    }
+    .footer_main div.contact{
+        margin: 10px;
+    }
+    div.contact_text{
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 20px;
+    }
+    .footer_main img{
+        width: 30px;
+        margin: 5px;
+    }
+    div.follow, div.pay{
+        margin: 10px;
+    }
+}
+@media screen and (min-width: 460px) and (max-width: 575.98px){
+    /* ----------header---------- */
+    div.icon{
+        margin-right: 70px;
+    }
+    header div img{
+        margin: 0 auto;
+        padding: 7px;
+    }
+
+    /* ----------new arrived---------- */
+    div.new div.new_box{
+        display: block;
+        text-align: center;
+    }
+    div.new img{
+        padding: 0;
+        margin: 30px auto;
+        display: block;
+        width: 90%;
+    }
+    div.new p{
+        margin: 0;
+    }
+    /* 上方的view more*/
+    div p.view_more{
+    display: none;
+    }
+    /* 下方的view more*/
+    div div.view_more{
+        display: inline-block; /* 原本是none，復原 */
+    }
+    div.view_more p{
+        font-size: 12px;
+        padding: 20px 50px;
+    }
+    /* ----------ranking---------- */
+    div.ranking img{
+        width: 180px;
+        height: 180px;
+        margin: 0;
+        padding: 0;
+    }
+    div.top{
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        margin: 5px;
+    }
+    div.ranking_box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div.top div.information{
+        padding: 0;
+        font-size: 10px;
+        width: 200px;
+        margin: 0;
+    }
+    div.top div{
+        margin: 5px;
+        font-size: 12px;
+        margin: 0;
+    }
+    div.top{
+        padding: 5px;
+        text-align: left;
+    }
+
+    div.ranking p.title{
+        margin: 0;
+        font-size: 18px;
+        padding: 50px 0 30px 0;
+    }
+    div.top p{
+        margin: 0px;
+        padding: 5px;
+        font-size: 12px;
+        background-color: #E8E1DB;
+    }
+    div.top div{
+        margin: 5px;
+        font-size: 12px;
+    }
+    div.other p{
+        padding: 5px 10px;
+        border: 1px solid #4F392B;
+        display: none;
+    }
+
+    div.price{
+        text-align: right;
+        padding: 2px;
+        font-size: 10px;
+    }
+    /* ----------instagram---------- */
+    div.instagram img{
+        width: 25%;
+        margin: 10px;
+    }
+    div.instagram img.img{
+        display: none;
+    }
+    /* ----------concept---------- */
+    div.slogan{
+        margin: 0 auto;
+        padding: 30px;
+    }
+    div.slogan h3{
+        margin: 0px;
+        padding: 5px;
+        text-align: center;
+    }
+    /* ----------brands---------- */
+    div p.brand{
+        border: 1px solid #4F392B;
+        display: inline-block;
+        margin: 2px;
+        font-size: 12px;
+    }    
+    .brands img{
+        width: 20%;
+        margin: 10px 5px;
+    }
+    /* ----------footer---------- */
+    .footer_main{
+        display: block;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .footer_main div.contact, div.follow, div.pay{
+        display: block;
+    }
+    .footer_main div.contact{
+        margin: 10px;
+    }
+    div.contact_text{
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 20px;
+    }
+    .footer_main img{
+        width: 30px;
+        margin: 5px;
+    }
+    div.follow, div.pay{
+        margin: 10px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767.98px){
+    /* ----------header---------- */
+    div.icon{
+        margin-right: 70px;
+    }
+    header div img{
+        margin: 0 auto;
+        padding: 7px;
+    }
+ 
+    /* ----------new arrived---------- */
+    div.new div.new_box{
+        display: block;
+        text-align: center;
+    }
+    div.new img{
+        padding: 0;
+        display: flex;
+        margin: 30px auto;
+        width: 80%;
+    }
+    div.new p{
+        margin: 0;
+    }
+    /* 上方的view more*/
+    div p.view_more{
+    display: none;
+    }
+    /* 下方的view more*/
+    div div.view_more{
+        display: inline-block; /* 原本是none，復原 */
+    }
+    div.view_more p{
+        font-size: 12px;
+        padding: 20px 50px;
+    }
+    /* ----------ranking---------- */
+    div.ranking img{
+        width: 230px;
+        margin: 0;
+        padding: 0;
+    }
+    div.top{
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+    }
+    div.ranking_box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div.top div.information{
+        width: 250px;
+    }
+    /* ----------instagram---------- */
+    div.instagram img{
+        width: 25%;
+        margin: 10px;
+    }
+    div.instagram img.img{
+        display: none;
+    }
+    /* ----------brands---------- */
+    .brands img{
+        width: 20%;
+        margin: 10px;
+    }
+    /* ----------footer---------- */
+    .footer_main{
+        display: block;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .footer_main div.contact, div.follow, div.pay{
+        display: block;
+    }
+    .footer_main div.contact{
+        margin: 0;
+    }
+    div.contact_text{
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 20px;
+    }
+    div.follow, div.pay{
+        margin: 10px;
+    }
+    .footer_main img{
+        width: 40px;
+        margin: 5px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    /* ----------header---------- */
+    div.icon{
+        margin-right: 70px;
+    }
+    header div img{
+        margin: 0 auto;
+        padding: 7px;
+    }
+
+    /* ----------new arrived---------- */
+    div.new img{
+        padding: 0;
+        margin: 30px;
+        /* display: flex; */
+        width: 60%;
+    }
+    /* ----------ranking---------- */
+    div.ranking img{
+        width: 230px;
+        margin: 0;
+        padding: 0;
+    }
+    /* ----------brands---------- */
+    .brands img{
+        width: 20%;
+        margin: 10px;
+    }
+    /* ----------footer---------- */
+    .footer_main{
+        display: block;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .footer_main div.contact, div.follow, div.pay{
+        display: block;
+    }
+    div.follow, div.pay{
+        margin: 10px;
+    }
+    .footer_main div.contact{
+        margin: 0;
+    }
+    div.contact_text{
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 20px;
+    }
+    .footer_main img{
+        width: 40px;
+        margin: 5px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+    /* ----------footer---------- */
+    .footer_main div.contact, div.follow, div.pay{
+        display: inline-block;
+        margin: 30px 20px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* ----------nav---------- */
+    /* 畫面寬度為 1200px 以上時，重新計算 right */
+    nav {
+        right: calc((100% - 1200px)/2);
+    }
+}
