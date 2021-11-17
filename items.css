@@ -139,6 +139,7 @@ div.container{
     /* border: 1px solid black; */
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
 }
 aside.aside{
     margin: 0 auto;
@@ -204,6 +205,13 @@ aside.aside {
     }
 }
 
+@media screen and (min-width: 768px){
+    aside.aside {
+        position: sticky;
+        top: 0%;
+    }
+}
+
 aside.aside nav.nav ul.nav_list {
     list-style: none;
     margin: 0;
@@ -264,6 +272,7 @@ main.main {
 
     /* 讓瀏覽器自動判斷有轉場效果的屬性 */
     transition: all 1s;
+    margin: 0;
 }
 
 main img{
